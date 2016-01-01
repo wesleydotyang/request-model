@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>J2Objc Manual</title>
+		<style type="text/css">
+		p, div{
+			margin-left:30;
+		}
+		h2{
+			margin-left:0;
+			font-weight:bold;
+			font-size:18;
+		}
+		li{
+			margin-left:0;
+			margin-top:60;
+			font-size:20;
+		 	color:#92A;
+			
+		}
+		body pre {
+			background-color:#DADADA;
+			 color:blue;
+			  margin-left:20px;
+			  margin-right:20px;
+			  padding:4px;
+			border:1px solid #AAAAAA;
+		}
+		body .comment {
+		 color:green;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align:center" >
+			<br/>J2Objc Manual</h1>
+		<h2> J2Objc is a tool to convert Json string to Objective-c model classes. To use this tool, simply paste a json string and name the model class where you want.</h2>
+		<li>Taking a json string with a class name<br/></li>
+		<h2>Input:</h2>
+		<pre class="code">
+User{
+	"name" : "Jack",
+	"age"  : 15
+}
+		</pre>
+		<h2>Output:</h2>
+			<p> class <strong>User</strong> which contains two string property "name" and "age"</p> 
+		<li>Specify your own types and property name by explicit declare them.<br/></li>
+		<h2>Input:</h2>
+		<pre class="code">
+User{
+	"name",
+	"id"     : userID,
+	"gender" : NSString *gender,
+	"age"    : int userAge
+}
+		</pre>
+		<h2>Output:</h2>
+		<p>class <strong>User</strong> with 4 properties: name, userID , gender ,userAge.
+		<br/><br/>Note: If no property name are specified, json's key is used as property name. To simplify writing, you can also use this format (json's key can be surrounded by " or ' or nothing):</p>
+		<pre class="code">
+<span class="comment">// simplified writing </span>
+User{
+	name,
+	userId,
+	gender  
+	<span class="comment">// 'int gender'   is not supported. Use 'gender: int gender' instead </span>
+}
+		</pre>
+		
+		<li>Array type</li>
+		<p>To specify an array variable you can use implicit or explict declaration.</p>
+		<pre class="code">
+			
+User{
+	"friends" : [], <span class="comment">// define property: NSArray *fiends; </span>
+	"friends2", [	<span class="comment">// define property: NSArray *fiends2; </span>
+		{"name":"John"},
+		{"name":"Jack"}
+	],
+	"friends3", myFriends [	<span class="comment">// define property: NSArray *myFiends; </span>
+		{"name":"John"},
+		{"name":"Jack"}
+	],
+	"friends4", NSArray&lt;Friend&gt; myFriendlist [<span class="comment">// define property: NSArray *myFriendlist which is elements of Friend; </span>
+		{"name":"John"},	<span class="comment">//'Friend' class will be generated if 'Friend' hasn't been defined</span>
+		{"name":"Jack"}		<span class="comment">//If 'Friend' class has no "name" property, "name" will be add to 'Friend'. </span>
+	] 
+}		
+	</pre>
+	<li>Dictionary and Custom type</li>
+	<p>To specify an dictionary variable or your own custom object you can use implicit or explict declaration.</p>
+		<pre class="code">
+			
+{
+	"status" : true, <span class="comment">// define property: BOOL status. Since no top object is defined, this is simply ignored. </span>
+	"data"   : {	
+		"user" : {},	<span class="comment">// define property: NSDictioanry *user; </span>
+		"user2": NSDictionary *user2, <span class="comment">// define property: NSDictioanry *user2; </span>
+		"user3": User *user3{	<span class="comment">// define property: User *user3, and create class "User" with property "name" and "age"  </span>
+			"name",
+			"age"
+		}
+	}
+	
+}		
+	</pre>
+	
+	<br/><br/><br/>
+	<p style="font-size:16; color:#222">If there is any concer or question please <a href="mailto:wesleyyang@augmentum.com.cn">mail to me</a>.</p>
+	<br/><br/><br/>
+	</body>
+</html>
+

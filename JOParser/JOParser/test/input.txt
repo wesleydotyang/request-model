@@ -1,0 +1,25 @@
+
+Moo {"countA" : int count,
+"strength" : 10
+ }
+ 
+Hello{
+name:"haname",
+'b':c,
+ ”money“:int m,
+ "busy" : NO,
+ "happy": true,
+"data":NSMutableDictionary moo{
+    "property":
+},
+"dataList":NSArray<Moo> alotMoo[
+{
+  "name":
+},
+{
+ "name"：
+}
+】
+
+}
+

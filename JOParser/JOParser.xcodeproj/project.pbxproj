@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BBE654F17A748F4003494F4 /* AHDefine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BBE654C17A7474D003494F4 /* AHDefine.h */; };
+		2BBE655517A75444003494F4 /* NSDictionary+MultiKeys.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BBE655217A74B9C003494F4 /* NSDictionary+MultiKeys.h */; };
+		2BBE655617A75444003494F4 /* NSDictionary+MultiKeys.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BBE655317A74B9C003494F4 /* NSDictionary+MultiKeys.m */; };
+		2BCF5ACB179D17D90024F64A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCF5ACA179D17D90024F64A /* UIKit.framework */; };
+		2BCF5ACD179D17D90024F64A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCF5ACC179D17D90024F64A /* Foundation.framework */; };
+		2BCF5ACF179D17D90024F64A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCF5ACE179D17D90024F64A /* CoreGraphics.framework */; };
+		2BCF5AD5179D17D90024F64A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5AD3179D17D90024F64A /* InfoPlist.strings */; };
+		2BCF5AD7179D17D90024F64A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AD6179D17D90024F64A /* main.m */; };
+		2BCF5ADB179D17D90024F64A /* JOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5ADA179D17D90024F64A /* JOAppDelegate.m */; };
+		2BCF5ADD179D17D90024F64A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5ADC179D17D90024F64A /* Default.png */; };
+		2BCF5ADF179D17D90024F64A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5ADE179D17D90024F64A /* Default@2x.png */; };
+		2BCF5AE1179D17D90024F64A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5AE0179D17D90024F64A /* Default-568h@2x.png */; };
+		2BCF5AE4179D17D90024F64A /* JOViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AE3179D17D90024F64A /* JOViewController.mm */; };
+		2BCF5AE7179D17D90024F64A /* JOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5AE5179D17D90024F64A /* JOViewController_iPhone.xib */; };
+		2BCF5AEA179D17D90024F64A /* JOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5AE8179D17D90024F64A /* JOViewController_iPad.xib */; };
+		2BCF5B07179D184A0024F64A /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5AF7179D184A0024F64A /* build.sh */; };
+		2BCF5B0A179D184A0024F64A /* FileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AFD179D184A0024F64A /* FileStore.m */; };
+		2BCF5B0B179D184A0024F64A /* NSMutableDictionary+duplicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AFF179D184A0024F64A /* NSMutableDictionary+duplicate.m */; };
+		2BCF5B0C179D184A0024F64A /* ProjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B02179D184A0024F64A /* ProjectStore.m */; };
+		2BCF5B0D179D184A0024F64A /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B04179D184A0024F64A /* Recorder.m */; };
+		2BCF5B13179D18A40024F64A /* Json2ObjcLexer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B10179D18A40024F64A /* Json2ObjcLexer.mm */; };
+		2BCF5B17179D19300024F64A /* Json2ObjcParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B16179D19300024F64A /* Json2ObjcParser.mm */; };
+		2BCF5B1A179D1BD00024F64A /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF5B19179D1BD00024F64A /* input.txt */; };
+		2BCF5B1D179D26980024F64A /* PublicParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B1C179D26980024F64A /* PublicParser.mm */; };
+		2BCF5B20179D43C70024F64A /* JOValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B1F179D43C70024F64A /* JOValue.m */; };
+		2BCF5B23179D43D80024F64A /* JOBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B22179D43D80024F64A /* JOBase.m */; };
+		2BCF5B26179D440A0024F64A /* JOTypeSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B25179D440A0024F64A /* JOTypeSpecifier.m */; };
+		2BCF5B29179D44770024F64A /* JOAssignmentExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B28179D44770024F64A /* JOAssignmentExp.m */; };
+		2BCF5B2C179D44970024F64A /* JODeclareExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B2B179D44960024F64A /* JODeclareExp.m */; };
+		2BCF5B2F179D44AA0024F64A /* JOLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B2E179D44AA0024F64A /* JOLink.m */; };
+		2BCF5B70179E2ABD0024F64A /* JORequestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B6F179E2ABC0024F64A /* JORequestHeader.m */; };
+		2BCF5B75179E4D200024F64A /* JORequestBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B74179E4D1F0024F64A /* JORequestBody.m */; };
+		2BCF5B78179E4E370024F64A /* JORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B77179E4E360024F64A /* JORequest.m */; };
+		2BCF5B7B179E56A20024F64A /* JOResponseBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B7A179E56A10024F64A /* JOResponseBody.m */; };
+		2BCF5B7E179E574D0024F64A /* JOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B7D179E574B0024F64A /* JOResponse.m */; };
+		2BCF5B81179E59940024F64A /* JOService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B80179E59920024F64A /* JOService.m */; };
+		2BCF5B84179E60620024F64A /* NSMutableArray+allownil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B83179E60620024F64A /* NSMutableArray+allownil.m */; };
+		2BCF5B9D179E94D80024F64A /* ParseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B9C179E94D70024F64A /* ParseResult.m */; };
+		2BCF5BFF179E9DBA0024F64A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCF5ACC179D17D90024F64A /* Foundation.framework */; };
+		2BCF5C02179E9DBB0024F64A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C01179E9DBB0024F64A /* main.m */; };
+		2BCF5C06179E9DBB0024F64A /* parsefile.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BCF5C05179E9DBB0024F64A /* parsefile.1 */; };
+		2BCF5C0A179E9DE40024F64A /* GRMustache.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B89179E62250024F64A /* GRMustache.h */; };
+		2BCF5C0B179E9DE40024F64A /* GRMustacheAvailabilityMacros.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B8A179E62250024F64A /* GRMustacheAvailabilityMacros.h */; };
+		2BCF5C0C179E9DE40024F64A /* GRMustacheConfiguration.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B8B179E62250024F64A /* GRMustacheConfiguration.h */; };
+		2BCF5C0D179E9DE40024F64A /* GRMustacheContext.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B8C179E62250024F64A /* GRMustacheContext.h */; };
+		2BCF5C0E179E9DE40024F64A /* GRMustacheError.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B8D179E62250024F64A /* GRMustacheError.h */; };
+		2BCF5C0F179E9DE40024F64A /* GRMustacheFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B8E179E62250024F64A /* GRMustacheFilter.h */; };
+		2BCF5C10179E9DE40024F64A /* GRMustacheLocalizer.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B8F179E62250024F64A /* GRMustacheLocalizer.h */; };
+		2BCF5C11179E9DE40024F64A /* GRMustacheRendering.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B90179E62250024F64A /* GRMustacheRendering.h */; };
+		2BCF5C12179E9DE40024F64A /* GRMustacheTag.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B91179E62250024F64A /* GRMustacheTag.h */; };
+		2BCF5C13179E9DE40024F64A /* GRMustacheTagDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B92179E62250024F64A /* GRMustacheTagDelegate.h */; };
+		2BCF5C14179E9DE40024F64A /* GRMustacheTemplate.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B93179E62250024F64A /* GRMustacheTemplate.h */; };
+		2BCF5C15179E9DE40024F64A /* GRMustacheTemplateRepository.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B94179E62250024F64A /* GRMustacheTemplateRepository.h */; };
+		2BCF5C16179E9DE40024F64A /* GRMustacheVersion.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B95179E62250024F64A /* GRMustacheVersion.h */; };
+		2BCF5C17179E9DE40024F64A /* NSFormatter+GRMustache.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B96179E62250024F64A /* NSFormatter+GRMustache.h */; };
+		2BCF5C18179E9DE40024F64A /* NSValueTransformer+GRMustache.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B97179E62250024F64A /* NSValueTransformer+GRMustache.h */; };
+		2BCF5C19179E9DEB0024F64A /* JOValue.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B1E179D43C70024F64A /* JOValue.h */; };
+		2BCF5C1A179E9DEB0024F64A /* JOValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B1F179D43C70024F64A /* JOValue.m */; };
+		2BCF5C1B179E9DEB0024F64A /* JOBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B21179D43D80024F64A /* JOBase.h */; };
+		2BCF5C1C179E9DEB0024F64A /* JOBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B22179D43D80024F64A /* JOBase.m */; };
+		2BCF5C1D179E9DEB0024F64A /* JOTypeSpecifier.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B24179D440A0024F64A /* JOTypeSpecifier.h */; };
+		2BCF5C1E179E9DEB0024F64A /* JOTypeSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B25179D440A0024F64A /* JOTypeSpecifier.m */; };
+		2BCF5C1F179E9DEB0024F64A /* JOAssignmentExp.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B27179D44770024F64A /* JOAssignmentExp.h */; };
+		2BCF5C20179E9DEB0024F64A /* JOAssignmentExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B28179D44770024F64A /* JOAssignmentExp.m */; };
+		2BCF5C21179E9DEB0024F64A /* JODeclareExp.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B2A179D44960024F64A /* JODeclareExp.h */; };
+		2BCF5C22179E9DEB0024F64A /* JODeclareExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B2B179D44960024F64A /* JODeclareExp.m */; };
+		2BCF5C23179E9DEB0024F64A /* JOLink.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B2D179D44AA0024F64A /* JOLink.h */; };
+		2BCF5C24179E9DEB0024F64A /* JOLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B2E179D44AA0024F64A /* JOLink.m */; };
+		2BCF5C25179E9DEB0024F64A /* JOHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B30179D44B80024F64A /* JOHeader.h */; };
+		2BCF5C26179E9DEB0024F64A /* JORequestHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B6E179E2ABC0024F64A /* JORequestHeader.h */; };
+		2BCF5C27179E9DEB0024F64A /* JORequestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B6F179E2ABC0024F64A /* JORequestHeader.m */; };
+		2BCF5C28179E9DEB0024F64A /* JORequestBody.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B73179E4D1E0024F64A /* JORequestBody.h */; };
+		2BCF5C29179E9DEB0024F64A /* JORequestBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B74179E4D1F0024F64A /* JORequestBody.m */; };
+		2BCF5C2A179E9DEB0024F64A /* JORequest.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B76179E4E350024F64A /* JORequest.h */; };
+		2BCF5C2B179E9DEB0024F64A /* JORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B77179E4E360024F64A /* JORequest.m */; };
+		2BCF5C2C179E9DEB0024F64A /* JOResponseBody.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B79179E56A10024F64A /* JOResponseBody.h */; };
+		2BCF5C2D179E9DEB0024F64A /* JOResponseBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B7A179E56A10024F64A /* JOResponseBody.m */; };
+		2BCF5C2E179E9DEB0024F64A /* JOResponse.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B7C179E574B0024F64A /* JOResponse.h */; };
+		2BCF5C2F179E9DEB0024F64A /* JOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B7D179E574B0024F64A /* JOResponse.m */; };
+		2BCF5C30179E9DEB0024F64A /* JOService.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B7F179E59910024F64A /* JOService.h */; };
+		2BCF5C31179E9DEB0024F64A /* JOService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B80179E59920024F64A /* JOService.m */; };
+		2BCF5C32179E9DF60024F64A /* ParserHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B00179D184A0024F64A /* ParserHeader.h */; };
+		2BCF5C33179E9DF60024F64A /* PublicParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B1B179D26980024F64A /* PublicParser.h */; };
+		2BCF5C34179E9DF60024F64A /* PublicParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B1C179D26980024F64A /* PublicParser.mm */; };
+		2BCF5C35179E9DF60024F64A /* FileStore.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AFC179D184A0024F64A /* FileStore.h */; };
+		2BCF5C36179E9DF60024F64A /* FileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AFD179D184A0024F64A /* FileStore.m */; };
+		2BCF5C37179E9DF60024F64A /* NSMutableDictionary+duplicate.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AFE179D184A0024F64A /* NSMutableDictionary+duplicate.h */; };
+		2BCF5C38179E9DF60024F64A /* NSMutableDictionary+duplicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5AFF179D184A0024F64A /* NSMutableDictionary+duplicate.m */; };
+		2BCF5C39179E9DF60024F64A /* ProjectStore.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B01179D184A0024F64A /* ProjectStore.h */; };
+		2BCF5C3A179E9DF60024F64A /* ProjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B02179D184A0024F64A /* ProjectStore.m */; };
+		2BCF5C3B179E9DF60024F64A /* Recorder.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B03179D184A0024F64A /* Recorder.h */; };
+		2BCF5C3C179E9DF60024F64A /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B04179D184A0024F64A /* Recorder.m */; };
+		2BCF5C3D179E9DF60024F64A /* NSMutableArray+allownil.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B82179E60620024F64A /* NSMutableArray+allownil.h */; };
+		2BCF5C3E179E9DF60024F64A /* NSMutableArray+allownil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B83179E60620024F64A /* NSMutableArray+allownil.m */; };
+		2BCF5C3F179E9DF60024F64A /* ParseResult.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B9B179E94D60024F64A /* ParseResult.h */; };
+		2BCF5C40179E9DF60024F64A /* ParseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B9C179E94D70024F64A /* ParseResult.m */; };
+		2BCF5C41179E9E6D0024F64A /* Json2ObjcLexer.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B0F179D18A40024F64A /* Json2ObjcLexer.h */; };
+		2BCF5C42179E9E6D0024F64A /* Json2ObjcLexer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B10179D18A40024F64A /* Json2ObjcLexer.mm */; };
+		2BCF5C43179E9E6D0024F64A /* Json2ObjcParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B15179D19300024F64A /* Json2ObjcParser.h */; };
+		2BCF5C44179E9E6D0024F64A /* Json2ObjcParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5B16179D19300024F64A /* Json2ObjcParser.mm */; };
+		2BCF5C4F179EA30F0024F64A /* JOGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C4E179EA30F0024F64A /* JOGenerator.m */; };
+		2BCF5C50179EA30F0024F64A /* JOGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C4E179EA30F0024F64A /* JOGenerator.m */; };
+		2BCF5C53179EA78D0024F64A /* JOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C52179EA78D0024F64A /* JOModel.m */; };
+		2BCF5C54179EA78D0024F64A /* JOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C52179EA78D0024F64A /* JOModel.m */; };
+		2BCF5C56179F57050024F64A /* libGRMustache6-MacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCF5C55179F57050024F64A /* libGRMustache6-MacOS.a */; };
+		2BCF5C57179F57050024F64A /* libGRMustache6-MacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCF5C55179F57050024F64A /* libGRMustache6-MacOS.a */; };
+		2BCF5C5A179F5D2B0024F64A /* JOProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C59179F5D2A0024F64A /* JOProperty.m */; };
+		2BCF5C5B179F5D2B0024F64A /* JOProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C59179F5D2A0024F64A /* JOProperty.m */; };
+		2BCF5C5F179FCCF40024F64A /* ModelTemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BCF5B98179E62C10024F64A /* ModelTemplate.h */; };
+		2BCF5C60179FCCF40024F64A /* ModelTemplate.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BCF5B99179E62C10024F64A /* ModelTemplate.m */; };
+		2BCF5C9217A11C920024F64A /* JOTemplateObjectMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C9117A11C910024F64A /* JOTemplateObjectMaker.m */; };
+		2BCF5C9317A121C20024F64A /* JOTemplateObjectMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF5C9117A11C910024F64A /* JOTemplateObjectMaker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BCF5BFC179E9DBA0024F64A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				2BCF5C06179E9DBB0024F64A /* parsefile.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		2BCF5C4B179EA0CC0024F64A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = resource;
+			dstSubfolderSpec = 7;
+			files = (
+				2BBE655517A75444003494F4 /* NSDictionary+MultiKeys.h in CopyFiles */,
+				2BBE655617A75444003494F4 /* NSDictionary+MultiKeys.m in CopyFiles */,
+				2BBE654F17A748F4003494F4 /* AHDefine.h in CopyFiles */,
+				2BCF5C5F179FCCF40024F64A /* ModelTemplate.h in CopyFiles */,
+				2BCF5C60179FCCF40024F64A /* ModelTemplate.m in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2BBE654C17A7474D003494F4 /* AHDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHDefine.h; sourceTree = "<group>"; };
+		2BBE655217A74B9C003494F4 /* NSDictionary+MultiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MultiKeys.h"; sourceTree = "<group>"; };
+		2BBE655317A74B9C003494F4 /* NSDictionary+MultiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MultiKeys.m"; sourceTree = "<group>"; };
+		2BCF5AC7179D17D90024F64A /* JOParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JOParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCF5ACA179D17D90024F64A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BCF5ACC179D17D90024F64A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BCF5ACE179D17D90024F64A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BCF5AD2179D17D90024F64A /* JOParser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JOParser-Info.plist"; sourceTree = "<group>"; };
+		2BCF5AD4179D17D90024F64A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BCF5AD6179D17D90024F64A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BCF5AD8179D17D90024F64A /* JOParser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JOParser-Prefix.pch"; sourceTree = "<group>"; };
+		2BCF5AD9179D17D90024F64A /* JOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOAppDelegate.h; sourceTree = "<group>"; };
+		2BCF5ADA179D17D90024F64A /* JOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOAppDelegate.m; sourceTree = "<group>"; };
+		2BCF5ADC179D17D90024F64A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2BCF5ADE179D17D90024F64A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2BCF5AE0179D17D90024F64A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2BCF5AE2179D17D90024F64A /* JOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOViewController.h; sourceTree = "<group>"; };
+		2BCF5AE3179D17D90024F64A /* JOViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JOViewController.mm; sourceTree = "<group>"; };
+		2BCF5AE6179D17D90024F64A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JOViewController_iPhone.xib; sourceTree = "<group>"; };
+		2BCF5AE9179D17D90024F64A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JOViewController_iPad.xib; sourceTree = "<group>"; };
+		2BCF5AF7179D184A0024F64A /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		2BCF5AF8179D184A0024F64A /* json2objc.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = json2objc.l; sourceTree = "<group>"; };
+		2BCF5AF9179D184A0024F64A /* json2objc.y */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = json2objc.y; sourceTree = "<group>"; };
+		2BCF5AFC179D184A0024F64A /* FileStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStore.h; sourceTree = "<group>"; };
+		2BCF5AFD179D184A0024F64A /* FileStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileStore.m; sourceTree = "<group>"; };
+		2BCF5AFE179D184A0024F64A /* NSMutableDictionary+duplicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+duplicate.h"; sourceTree = "<group>"; };
+		2BCF5AFF179D184A0024F64A /* NSMutableDictionary+duplicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+duplicate.m"; sourceTree = "<group>"; };
+		2BCF5B00179D184A0024F64A /* ParserHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserHeader.h; sourceTree = "<group>"; };
+		2BCF5B01179D184A0024F64A /* ProjectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectStore.h; sourceTree = "<group>"; };
+		2BCF5B02179D184A0024F64A /* ProjectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectStore.m; sourceTree = "<group>"; };
+		2BCF5B03179D184A0024F64A /* Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recorder.h; sourceTree = "<group>"; };
+		2BCF5B04179D184A0024F64A /* Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recorder.m; sourceTree = "<group>"; };
+		2BCF5B0F179D18A40024F64A /* Json2ObjcLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Json2ObjcLexer.h; sourceTree = "<group>"; };
+		2BCF5B10179D18A40024F64A /* Json2ObjcLexer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Json2ObjcLexer.mm; sourceTree = "<group>"; };
+		2BCF5B15179D19300024F64A /* Json2ObjcParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Json2ObjcParser.h; sourceTree = "<group>"; };
+		2BCF5B16179D19300024F64A /* Json2ObjcParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Json2ObjcParser.mm; sourceTree = "<group>"; };
+		2BCF5B19179D1BD00024F64A /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		2BCF5B1B179D26980024F64A /* PublicParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicParser.h; sourceTree = "<group>"; };
+		2BCF5B1C179D26980024F64A /* PublicParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PublicParser.mm; sourceTree = "<group>"; };
+		2BCF5B1E179D43C70024F64A /* JOValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOValue.h; sourceTree = "<group>"; };
+		2BCF5B1F179D43C70024F64A /* JOValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOValue.m; sourceTree = "<group>"; };
+		2BCF5B21179D43D80024F64A /* JOBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOBase.h; sourceTree = "<group>"; };
+		2BCF5B22179D43D80024F64A /* JOBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOBase.m; sourceTree = "<group>"; };
+		2BCF5B24179D440A0024F64A /* JOTypeSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOTypeSpecifier.h; sourceTree = "<group>"; };
+		2BCF5B25179D440A0024F64A /* JOTypeSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOTypeSpecifier.m; sourceTree = "<group>"; };
+		2BCF5B27179D44770024F64A /* JOAssignmentExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOAssignmentExp.h; sourceTree = "<group>"; };
+		2BCF5B28179D44770024F64A /* JOAssignmentExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOAssignmentExp.m; sourceTree = "<group>"; };
+		2BCF5B2A179D44960024F64A /* JODeclareExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JODeclareExp.h; sourceTree = "<group>"; };
+		2BCF5B2B179D44960024F64A /* JODeclareExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JODeclareExp.m; sourceTree = "<group>"; };
+		2BCF5B2D179D44AA0024F64A /* JOLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOLink.h; sourceTree = "<group>"; };
+		2BCF5B2E179D44AA0024F64A /* JOLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOLink.m; sourceTree = "<group>"; };
+		2BCF5B30179D44B80024F64A /* JOHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOHeader.h; sourceTree = "<group>"; };
+		2BCF5B6E179E2ABC0024F64A /* JORequestHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JORequestHeader.h; sourceTree = "<group>"; };
+		2BCF5B6F179E2ABC0024F64A /* JORequestHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JORequestHeader.m; sourceTree = "<group>"; };
+		2BCF5B73179E4D1E0024F64A /* JORequestBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JORequestBody.h; sourceTree = "<group>"; };
+		2BCF5B74179E4D1F0024F64A /* JORequestBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JORequestBody.m; sourceTree = "<group>"; };
+		2BCF5B76179E4E350024F64A /* JORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JORequest.h; sourceTree = "<group>"; };
+		2BCF5B77179E4E360024F64A /* JORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JORequest.m; sourceTree = "<group>"; };
+		2BCF5B79179E56A10024F64A /* JOResponseBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOResponseBody.h; sourceTree = "<group>"; };
+		2BCF5B7A179E56A10024F64A /* JOResponseBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOResponseBody.m; sourceTree = "<group>"; };
+		2BCF5B7C179E574B0024F64A /* JOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOResponse.h; sourceTree = "<group>"; };
+		2BCF5B7D179E574B0024F64A /* JOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOResponse.m; sourceTree = "<group>"; };
+		2BCF5B7F179E59910024F64A /* JOService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOService.h; sourceTree = "<group>"; };
+		2BCF5B80179E59920024F64A /* JOService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOService.m; sourceTree = "<group>"; };
+		2BCF5B82179E60620024F64A /* NSMutableArray+allownil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+allownil.h"; sourceTree = "<group>"; };
+		2BCF5B83179E60620024F64A /* NSMutableArray+allownil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+allownil.m"; sourceTree = "<group>"; };
+		2BCF5B89179E62250024F64A /* GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustache.h; sourceTree = "<group>"; };
+		2BCF5B8A179E62250024F64A /* GRMustacheAvailabilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheAvailabilityMacros.h; sourceTree = "<group>"; };
+		2BCF5B8B179E62250024F64A /* GRMustacheConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheConfiguration.h; sourceTree = "<group>"; };
+		2BCF5B8C179E62250024F64A /* GRMustacheContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheContext.h; sourceTree = "<group>"; };
+		2BCF5B8D179E62250024F64A /* GRMustacheError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheError.h; sourceTree = "<group>"; };
+		2BCF5B8E179E62250024F64A /* GRMustacheFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheFilter.h; sourceTree = "<group>"; };
+		2BCF5B8F179E62250024F64A /* GRMustacheLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheLocalizer.h; sourceTree = "<group>"; };
+		2BCF5B90179E62250024F64A /* GRMustacheRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheRendering.h; sourceTree = "<group>"; };
+		2BCF5B91179E62250024F64A /* GRMustacheTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTag.h; sourceTree = "<group>"; };
+		2BCF5B92179E62250024F64A /* GRMustacheTagDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTagDelegate.h; sourceTree = "<group>"; };
+		2BCF5B93179E62250024F64A /* GRMustacheTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplate.h; sourceTree = "<group>"; };
+		2BCF5B94179E62250024F64A /* GRMustacheTemplateRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateRepository.h; sourceTree = "<group>"; };
+		2BCF5B95179E62250024F64A /* GRMustacheVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheVersion.h; sourceTree = "<group>"; };
+		2BCF5B96179E62250024F64A /* NSFormatter+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFormatter+GRMustache.h"; sourceTree = "<group>"; };
+		2BCF5B97179E62250024F64A /* NSValueTransformer+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+GRMustache.h"; sourceTree = "<group>"; };
+		2BCF5B98179E62C10024F64A /* ModelTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTemplate.h; sourceTree = "<group>"; };
+		2BCF5B99179E62C10024F64A /* ModelTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTemplate.m; sourceTree = "<group>"; };
+		2BCF5B9B179E94D60024F64A /* ParseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseResult.h; sourceTree = "<group>"; };
+		2BCF5B9C179E94D70024F64A /* ParseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseResult.m; sourceTree = "<group>"; };
+		2BCF5BA3179E9AAD0024F64A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2BCF5BD9179E9CD90024F64A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2BCF5BFE179E9DBA0024F64A /* parsefile */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = parsefile; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCF5C01179E9DBB0024F64A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BCF5C04179E9DBB0024F64A /* parsefile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parsefile-Prefix.pch"; sourceTree = "<group>"; };
+		2BCF5C05179E9DBB0024F64A /* parsefile.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = parsefile.1; sourceTree = "<group>"; };
+		2BCF5C4D179EA30F0024F64A /* JOGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOGenerator.h; sourceTree = "<group>"; };
+		2BCF5C4E179EA30F0024F64A /* JOGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOGenerator.m; sourceTree = "<group>"; };
+		2BCF5C51179EA78D0024F64A /* JOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOModel.h; sourceTree = "<group>"; };
+		2BCF5C52179EA78D0024F64A /* JOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOModel.m; sourceTree = "<group>"; };
+		2BCF5C55179F57050024F64A /* libGRMustache6-MacOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGRMustache6-MacOS.a"; sourceTree = "<group>"; };
+		2BCF5C58179F5D2A0024F64A /* JOProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOProperty.h; sourceTree = "<group>"; };
+		2BCF5C59179F5D2A0024F64A /* JOProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOProperty.m; sourceTree = "<group>"; };
+		2BCF5C9017A11C900024F64A /* JOTemplateObjectMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOTemplateObjectMaker.h; sourceTree = "<group>"; };
+		2BCF5C9117A11C910024F64A /* JOTemplateObjectMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOTemplateObjectMaker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BCF5AC4179D17D90024F64A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCF5ACB179D17D90024F64A /* UIKit.framework in Frameworks */,
+				2BCF5ACD179D17D90024F64A /* Foundation.framework in Frameworks */,
+				2BCF5ACF179D17D90024F64A /* CoreGraphics.framework in Frameworks */,
+				2BCF5C56179F57050024F64A /* libGRMustache6-MacOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCF5BFB179E9DBA0024F64A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCF5BFF179E9DBA0024F64A /* Foundation.framework in Frameworks */,
+				2BCF5C57179F57050024F64A /* libGRMustache6-MacOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BBE654B17A74707003494F4 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE654C17A7474D003494F4 /* AHDefine.h */,
+				2BBE655217A74B9C003494F4 /* NSDictionary+MultiKeys.h */,
+				2BBE655317A74B9C003494F4 /* NSDictionary+MultiKeys.m */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		2BCF5ABE179D17D90024F64A = {
+			isa = PBXGroup;
+			children = (
+				2BCF5BD9179E9CD90024F64A /* Foundation.framework */,
+				2BCF5AD0179D17D90024F64A /* JOParser */,
+				2BCF5C00179E9DBA0024F64A /* parsefile */,
+				2BCF5AC9179D17D90024F64A /* Frameworks */,
+				2BCF5AC8179D17D90024F64A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BCF5AC8179D17D90024F64A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5AC7179D17D90024F64A /* JOParser.app */,
+				2BCF5BFE179E9DBA0024F64A /* parsefile */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BCF5AC9179D17D90024F64A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5ACA179D17D90024F64A /* UIKit.framework */,
+				2BCF5ACC179D17D90024F64A /* Foundation.framework */,
+				2BCF5ACE179D17D90024F64A /* CoreGraphics.framework */,
+				2BCF5BA3179E9AAD0024F64A /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BCF5AD0179D17D90024F64A /* JOParser */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5B86179E62210024F64A /* template_file */,
+				2BCF5B87179E62230024F64A /* vendor */,
+				2BCF5B85179E619F0024F64A /* generator */,
+				2BCF5B18179D1BBE0024F64A /* test */,
+				2BCF5AF6179D184A0024F64A /* grammar */,
+				2BCF5AFA179D184A0024F64A /* model */,
+				2BCF5AFB179D184A0024F64A /* parser */,
+				2BCF5AD9179D17D90024F64A /* JOAppDelegate.h */,
+				2BCF5ADA179D17D90024F64A /* JOAppDelegate.m */,
+				2BCF5AE2179D17D90024F64A /* JOViewController.h */,
+				2BCF5AE3179D17D90024F64A /* JOViewController.mm */,
+				2BCF5AE5179D17D90024F64A /* JOViewController_iPhone.xib */,
+				2BCF5AE8179D17D90024F64A /* JOViewController_iPad.xib */,
+				2BCF5AD1179D17D90024F64A /* Supporting Files */,
+			);
+			path = JOParser;
+			sourceTree = "<group>";
+		};
+		2BCF5AD1179D17D90024F64A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5AD2179D17D90024F64A /* JOParser-Info.plist */,
+				2BCF5AD3179D17D90024F64A /* InfoPlist.strings */,
+				2BCF5AD6179D17D90024F64A /* main.m */,
+				2BCF5AD8179D17D90024F64A /* JOParser-Prefix.pch */,
+				2BCF5ADC179D17D90024F64A /* Default.png */,
+				2BCF5ADE179D17D90024F64A /* Default@2x.png */,
+				2BCF5AE0179D17D90024F64A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BCF5AF6179D184A0024F64A /* grammar */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5B0F179D18A40024F64A /* Json2ObjcLexer.h */,
+				2BCF5B10179D18A40024F64A /* Json2ObjcLexer.mm */,
+				2BCF5B15179D19300024F64A /* Json2ObjcParser.h */,
+				2BCF5B16179D19300024F64A /* Json2ObjcParser.mm */,
+				2BCF5AF7179D184A0024F64A /* build.sh */,
+				2BCF5AF8179D184A0024F64A /* json2objc.l */,
+				2BCF5AF9179D184A0024F64A /* json2objc.y */,
+			);
+			path = grammar;
+			sourceTree = "<group>";
+		};
+		2BCF5AFA179D184A0024F64A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5B1E179D43C70024F64A /* JOValue.h */,
+				2BCF5B1F179D43C70024F64A /* JOValue.m */,
+				2BCF5B21179D43D80024F64A /* JOBase.h */,
+				2BCF5B22179D43D80024F64A /* JOBase.m */,
+				2BCF5B24179D440A0024F64A /* JOTypeSpecifier.h */,
+				2BCF5B25179D440A0024F64A /* JOTypeSpecifier.m */,
+				2BCF5B27179D44770024F64A /* JOAssignmentExp.h */,
+				2BCF5B28179D44770024F64A /* JOAssignmentExp.m */,
+				2BCF5B2A179D44960024F64A /* JODeclareExp.h */,
+				2BCF5B2B179D44960024F64A /* JODeclareExp.m */,
+				2BCF5B2D179D44AA0024F64A /* JOLink.h */,
+				2BCF5B2E179D44AA0024F64A /* JOLink.m */,
+				2BCF5B30179D44B80024F64A /* JOHeader.h */,
+				2BCF5B6E179E2ABC0024F64A /* JORequestHeader.h */,
+				2BCF5B6F179E2ABC0024F64A /* JORequestHeader.m */,
+				2BCF5B73179E4D1E0024F64A /* JORequestBody.h */,
+				2BCF5B74179E4D1F0024F64A /* JORequestBody.m */,
+				2BCF5B76179E4E350024F64A /* JORequest.h */,
+				2BCF5B77179E4E360024F64A /* JORequest.m */,
+				2BCF5B79179E56A10024F64A /* JOResponseBody.h */,
+				2BCF5B7A179E56A10024F64A /* JOResponseBody.m */,
+				2BCF5B7C179E574B0024F64A /* JOResponse.h */,
+				2BCF5B7D179E574B0024F64A /* JOResponse.m */,
+				2BCF5B7F179E59910024F64A /* JOService.h */,
+				2BCF5B80179E59920024F64A /* JOService.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2BCF5AFB179D184A0024F64A /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5B00179D184A0024F64A /* ParserHeader.h */,
+				2BCF5B1B179D26980024F64A /* PublicParser.h */,
+				2BCF5B1C179D26980024F64A /* PublicParser.mm */,
+				2BCF5AFC179D184A0024F64A /* FileStore.h */,
+				2BCF5AFD179D184A0024F64A /* FileStore.m */,
+				2BCF5AFE179D184A0024F64A /* NSMutableDictionary+duplicate.h */,
+				2BCF5AFF179D184A0024F64A /* NSMutableDictionary+duplicate.m */,
+				2BCF5B01179D184A0024F64A /* ProjectStore.h */,
+				2BCF5B02179D184A0024F64A /* ProjectStore.m */,
+				2BCF5B03179D184A0024F64A /* Recorder.h */,
+				2BCF5B04179D184A0024F64A /* Recorder.m */,
+				2BCF5B82179E60620024F64A /* NSMutableArray+allownil.h */,
+				2BCF5B83179E60620024F64A /* NSMutableArray+allownil.m */,
+				2BCF5B9B179E94D60024F64A /* ParseResult.h */,
+				2BCF5B9C179E94D70024F64A /* ParseResult.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		2BCF5B18179D1BBE0024F64A /* test */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5B19179D1BD00024F64A /* input.txt */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		2BCF5B85179E619F0024F64A /* generator */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5C4D179EA30F0024F64A /* JOGenerator.h */,
+				2BCF5C4E179EA30F0024F64A /* JOGenerator.m */,
+				2BCF5C51179EA78D0024F64A /* JOModel.h */,
+				2BCF5C52179EA78D0024F64A /* JOModel.m */,
+				2BCF5C58179F5D2A0024F64A /* JOProperty.h */,
+				2BCF5C59179F5D2A0024F64A /* JOProperty.m */,
+				2BCF5C9017A11C900024F64A /* JOTemplateObjectMaker.h */,
+				2BCF5C9117A11C910024F64A /* JOTemplateObjectMaker.m */,
+			);
+			path = generator;
+			sourceTree = "<group>";
+		};
+		2BCF5B86179E62210024F64A /* template_file */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE654B17A74707003494F4 /* support */,
+				2BCF5B98179E62C10024F64A /* ModelTemplate.h */,
+				2BCF5B99179E62C10024F64A /* ModelTemplate.m */,
+			);
+			path = template_file;
+			sourceTree = "<group>";
+		};
+		2BCF5B87179E62230024F64A /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5B88179E62250024F64A /* GRMustache */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		2BCF5B88179E62250024F64A /* GRMustache */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5C55179F57050024F64A /* libGRMustache6-MacOS.a */,
+				2BCF5B89179E62250024F64A /* GRMustache.h */,
+				2BCF5B8A179E62250024F64A /* GRMustacheAvailabilityMacros.h */,
+				2BCF5B8B179E62250024F64A /* GRMustacheConfiguration.h */,
+				2BCF5B8C179E62250024F64A /* GRMustacheContext.h */,
+				2BCF5B8D179E62250024F64A /* GRMustacheError.h */,
+				2BCF5B8E179E62250024F64A /* GRMustacheFilter.h */,
+				2BCF5B8F179E62250024F64A /* GRMustacheLocalizer.h */,
+				2BCF5B90179E62250024F64A /* GRMustacheRendering.h */,
+				2BCF5B91179E62250024F64A /* GRMustacheTag.h */,
+				2BCF5B92179E62250024F64A /* GRMustacheTagDelegate.h */,
+				2BCF5B93179E62250024F64A /* GRMustacheTemplate.h */,
+				2BCF5B94179E62250024F64A /* GRMustacheTemplateRepository.h */,
+				2BCF5B95179E62250024F64A /* GRMustacheVersion.h */,
+				2BCF5B96179E62250024F64A /* NSFormatter+GRMustache.h */,
+				2BCF5B97179E62250024F64A /* NSValueTransformer+GRMustache.h */,
+			);
+			path = GRMustache;
+			sourceTree = "<group>";
+		};
+		2BCF5C00179E9DBA0024F64A /* parsefile */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5C01179E9DBB0024F64A /* main.m */,
+				2BCF5C05179E9DBB0024F64A /* parsefile.1 */,
+				2BCF5C03179E9DBB0024F64A /* Supporting Files */,
+			);
+			path = parsefile;
+			sourceTree = "<group>";
+		};
+		2BCF5C03179E9DBB0024F64A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF5C04179E9DBB0024F64A /* parsefile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BCF5AC6179D17D90024F64A /* JOParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BCF5AED179D17D90024F64A /* Build configuration list for PBXNativeTarget "JOParser" */;
+			buildPhases = (
+				2BCF5AC3179D17D90024F64A /* Sources */,
+				2BCF5AC4179D17D90024F64A /* Frameworks */,
+				2BCF5AC5179D17D90024F64A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JOParser;
+			productName = JOParser;
+			productReference = 2BCF5AC7179D17D90024F64A /* JOParser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BCF5BFD179E9DBA0024F64A /* parsefile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BCF5C07179E9DBB0024F64A /* Build configuration list for PBXNativeTarget "parsefile" */;
+			buildPhases = (
+				2BCF5BFA179E9DBA0024F64A /* Sources */,
+				2BCF5BFB179E9DBA0024F64A /* Frameworks */,
+				2BCF5BFC179E9DBA0024F64A /* CopyFiles */,
+				2BCF5C4B179EA0CC0024F64A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = parsefile;
+			productName = parsefile;
+			productReference = 2BCF5BFE179E9DBA0024F64A /* parsefile */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BCF5ABF179D17D90024F64A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = wesley.yang;
+			};
+			buildConfigurationList = 2BCF5AC2179D17D90024F64A /* Build configuration list for PBXProject "JOParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BCF5ABE179D17D90024F64A;
+			productRefGroup = 2BCF5AC8179D17D90024F64A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BCF5AC6179D17D90024F64A /* JOParser */,
+				2BCF5BFD179E9DBA0024F64A /* parsefile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BCF5AC5179D17D90024F64A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCF5AD5179D17D90024F64A /* InfoPlist.strings in Resources */,
+				2BCF5ADD179D17D90024F64A /* Default.png in Resources */,
+				2BCF5ADF179D17D90024F64A /* Default@2x.png in Resources */,
+				2BCF5AE1179D17D90024F64A /* Default-568h@2x.png in Resources */,
+				2BCF5AE7179D17D90024F64A /* JOViewController_iPhone.xib in Resources */,
+				2BCF5AEA179D17D90024F64A /* JOViewController_iPad.xib in Resources */,
+				2BCF5B07179D184A0024F64A /* build.sh in Resources */,
+				2BCF5B1A179D1BD00024F64A /* input.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BCF5AC3179D17D90024F64A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCF5AD7179D17D90024F64A /* main.m in Sources */,
+				2BCF5ADB179D17D90024F64A /* JOAppDelegate.m in Sources */,
+				2BCF5AE4179D17D90024F64A /* JOViewController.mm in Sources */,
+				2BCF5B0A179D184A0024F64A /* FileStore.m in Sources */,
+				2BCF5B0B179D184A0024F64A /* NSMutableDictionary+duplicate.m in Sources */,
+				2BCF5B0C179D184A0024F64A /* ProjectStore.m in Sources */,
+				2BCF5B0D179D184A0024F64A /* Recorder.m in Sources */,
+				2BCF5B13179D18A40024F64A /* Json2ObjcLexer.mm in Sources */,
+				2BCF5B17179D19300024F64A /* Json2ObjcParser.mm in Sources */,
+				2BCF5B1D179D26980024F64A /* PublicParser.mm in Sources */,
+				2BCF5B20179D43C70024F64A /* JOValue.m in Sources */,
+				2BCF5B23179D43D80024F64A /* JOBase.m in Sources */,
+				2BCF5B26179D440A0024F64A /* JOTypeSpecifier.m in Sources */,
+				2BCF5B29179D44770024F64A /* JOAssignmentExp.m in Sources */,
+				2BCF5B2C179D44970024F64A /* JODeclareExp.m in Sources */,
+				2BCF5B2F179D44AA0024F64A /* JOLink.m in Sources */,
+				2BCF5B70179E2ABD0024F64A /* JORequestHeader.m in Sources */,
+				2BCF5B75179E4D200024F64A /* JORequestBody.m in Sources */,
+				2BCF5B78179E4E370024F64A /* JORequest.m in Sources */,
+				2BCF5B7B179E56A20024F64A /* JOResponseBody.m in Sources */,
+				2BCF5B7E179E574D0024F64A /* JOResponse.m in Sources */,
+				2BCF5B81179E59940024F64A /* JOService.m in Sources */,
+				2BCF5B84179E60620024F64A /* NSMutableArray+allownil.m in Sources */,
+				2BCF5B9D179E94D80024F64A /* ParseResult.m in Sources */,
+				2BCF5C4F179EA30F0024F64A /* JOGenerator.m in Sources */,
+				2BCF5C53179EA78D0024F64A /* JOModel.m in Sources */,
+				2BCF5C5A179F5D2B0024F64A /* JOProperty.m in Sources */,
+				2BCF5C9217A11C920024F64A /* JOTemplateObjectMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCF5BFA179E9DBA0024F64A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCF5C41179E9E6D0024F64A /* Json2ObjcLexer.h in Sources */,
+				2BCF5C42179E9E6D0024F64A /* Json2ObjcLexer.mm in Sources */,
+				2BCF5C43179E9E6D0024F64A /* Json2ObjcParser.h in Sources */,
+				2BCF5C44179E9E6D0024F64A /* Json2ObjcParser.mm in Sources */,
+				2BCF5C32179E9DF60024F64A /* ParserHeader.h in Sources */,
+				2BCF5C33179E9DF60024F64A /* PublicParser.h in Sources */,
+				2BCF5C34179E9DF60024F64A /* PublicParser.mm in Sources */,
+				2BCF5C35179E9DF60024F64A /* FileStore.h in Sources */,
+				2BCF5C36179E9DF60024F64A /* FileStore.m in Sources */,
+				2BCF5C37179E9DF60024F64A /* NSMutableDictionary+duplicate.h in Sources */,
+				2BCF5C38179E9DF60024F64A /* NSMutableDictionary+duplicate.m in Sources */,
+				2BCF5C39179E9DF60024F64A /* ProjectStore.h in Sources */,
+				2BCF5C3A179E9DF60024F64A /* ProjectStore.m in Sources */,
+				2BCF5C3B179E9DF60024F64A /* Recorder.h in Sources */,
+				2BCF5C3C179E9DF60024F64A /* Recorder.m in Sources */,
+				2BCF5C3D179E9DF60024F64A /* NSMutableArray+allownil.h in Sources */,
+				2BCF5C3E179E9DF60024F64A /* NSMutableArray+allownil.m in Sources */,
+				2BCF5C3F179E9DF60024F64A /* ParseResult.h in Sources */,
+				2BCF5C40179E9DF60024F64A /* ParseResult.m in Sources */,
+				2BCF5C19179E9DEB0024F64A /* JOValue.h in Sources */,
+				2BCF5C1A179E9DEB0024F64A /* JOValue.m in Sources */,
+				2BCF5C1B179E9DEB0024F64A /* JOBase.h in Sources */,
+				2BCF5C1C179E9DEB0024F64A /* JOBase.m in Sources */,
+				2BCF5C1D179E9DEB0024F64A /* JOTypeSpecifier.h in Sources */,
+				2BCF5C1E179E9DEB0024F64A /* JOTypeSpecifier.m in Sources */,
+				2BCF5C1F179E9DEB0024F64A /* JOAssignmentExp.h in Sources */,
+				2BCF5C20179E9DEB0024F64A /* JOAssignmentExp.m in Sources */,
+				2BCF5C21179E9DEB0024F64A /* JODeclareExp.h in Sources */,
+				2BCF5C22179E9DEB0024F64A /* JODeclareExp.m in Sources */,
+				2BCF5C23179E9DEB0024F64A /* JOLink.h in Sources */,
+				2BCF5C24179E9DEB0024F64A /* JOLink.m in Sources */,
+				2BCF5C25179E9DEB0024F64A /* JOHeader.h in Sources */,
+				2BCF5C26179E9DEB0024F64A /* JORequestHeader.h in Sources */,
+				2BCF5C27179E9DEB0024F64A /* JORequestHeader.m in Sources */,
+				2BCF5C28179E9DEB0024F64A /* JORequestBody.h in Sources */,
+				2BCF5C29179E9DEB0024F64A /* JORequestBody.m in Sources */,
+				2BCF5C2A179E9DEB0024F64A /* JORequest.h in Sources */,
+				2BCF5C2B179E9DEB0024F64A /* JORequest.m in Sources */,
+				2BCF5C2C179E9DEB0024F64A /* JOResponseBody.h in Sources */,
+				2BCF5C2D179E9DEB0024F64A /* JOResponseBody.m in Sources */,
+				2BCF5C2E179E9DEB0024F64A /* JOResponse.h in Sources */,
+				2BCF5C2F179E9DEB0024F64A /* JOResponse.m in Sources */,
+				2BCF5C30179E9DEB0024F64A /* JOService.h in Sources */,
+				2BCF5C31179E9DEB0024F64A /* JOService.m in Sources */,
+				2BCF5C0A179E9DE40024F64A /* GRMustache.h in Sources */,
+				2BCF5C0B179E9DE40024F64A /* GRMustacheAvailabilityMacros.h in Sources */,
+				2BCF5C0C179E9DE40024F64A /* GRMustacheConfiguration.h in Sources */,
+				2BCF5C0D179E9DE40024F64A /* GRMustacheContext.h in Sources */,
+				2BCF5C0E179E9DE40024F64A /* GRMustacheError.h in Sources */,
+				2BCF5C0F179E9DE40024F64A /* GRMustacheFilter.h in Sources */,
+				2BCF5C10179E9DE40024F64A /* GRMustacheLocalizer.h in Sources */,
+				2BCF5C11179E9DE40024F64A /* GRMustacheRendering.h in Sources */,
+				2BCF5C12179E9DE40024F64A /* GRMustacheTag.h in Sources */,
+				2BCF5C13179E9DE40024F64A /* GRMustacheTagDelegate.h in Sources */,
+				2BCF5C14179E9DE40024F64A /* GRMustacheTemplate.h in Sources */,
+				2BCF5C15179E9DE40024F64A /* GRMustacheTemplateRepository.h in Sources */,
+				2BCF5C16179E9DE40024F64A /* GRMustacheVersion.h in Sources */,
+				2BCF5C17179E9DE40024F64A /* NSFormatter+GRMustache.h in Sources */,
+				2BCF5C18179E9DE40024F64A /* NSValueTransformer+GRMustache.h in Sources */,
+				2BCF5C02179E9DBB0024F64A /* main.m in Sources */,
+				2BCF5C50179EA30F0024F64A /* JOGenerator.m in Sources */,
+				2BCF5C54179EA78D0024F64A /* JOModel.m in Sources */,
+				2BCF5C5B179F5D2B0024F64A /* JOProperty.m in Sources */,
+				2BCF5C9317A121C20024F64A /* JOTemplateObjectMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BCF5AD3179D17D90024F64A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCF5AD4179D17D90024F64A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BCF5AE5179D17D90024F64A /* JOViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCF5AE6179D17D90024F64A /* en */,
+			);
+			name = JOViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		2BCF5AE8179D17D90024F64A /* JOViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCF5AE9179D17D90024F64A /* en */,
+			);
+			name = JOViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BCF5AEB179D17D90024F64A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BCF5AEC179D17D90024F64A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BCF5AEE179D17D90024F64A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOParser/JOParser-Prefix.pch";
+				INFOPLIST_FILE = "JOParser/JOParser-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JOParser/vendor/GRMustache\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2BCF5AEF179D17D90024F64A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOParser/JOParser-Prefix.pch";
+				INFOPLIST_FILE = "JOParser/JOParser-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JOParser/vendor/GRMustache\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2BCF5C08179E9DBB0024F64A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "parsefile/parsefile-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JOParser/vendor/GRMustache\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2BCF5C09179E9DBB0024F64A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "parsefile/parsefile-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JOParser/vendor/GRMustache\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BCF5AC2179D17D90024F64A /* Build configuration list for PBXProject "JOParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCF5AEB179D17D90024F64A /* Debug */,
+				2BCF5AEC179D17D90024F64A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BCF5AED179D17D90024F64A /* Build configuration list for PBXNativeTarget "JOParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCF5AEE179D17D90024F64A /* Debug */,
+				2BCF5AEF179D17D90024F64A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BCF5C07179E9DBB0024F64A /* Build configuration list for PBXNativeTarget "parsefile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCF5C08179E9DBB0024F64A /* Debug */,
+				2BCF5C09179E9DBB0024F64A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BCF5ABF179D17D90024F64A /* Project object */;
+}
